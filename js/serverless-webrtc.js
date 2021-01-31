@@ -13,7 +13,7 @@ function WebRTCChat(cfg, con, sendTyping) {
 
 /* WebRTC setup for broser-to-browser connection */
     self.cfg = {'iceServers':[
-        //{'url': 'stun:stun.l.google.com:19302'}
+        {'url': 'stun:stun.l.google.com:19302'}
     ]}; //{"url": "stun:23.21.150.121"}
     self.con = {'optional':  [{'DtlsSrtpKeyAgreement': true}] };
     self.activeChannel;
